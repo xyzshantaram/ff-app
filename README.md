@@ -1,0 +1,2 @@
+# Fractional.finance static site
+
