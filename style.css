@@ -1,0 +1,41 @@
+* {
+    font-family: 'Cantarell', sans-serif;
+}
+
+body {
+    background-color: #1a003d;
+    color: #d1d4db;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1.title {
+    font-size: 4rem;
+}
+
+span.subtitle {
+    font-size: 1.4rem;
+}
+
+.subtitle, .title {
+    text-align: center;
+}
+
+a, a:active, a:visited {
+    color: #008bff;
+}
+
+@media only screen and (max-aspect-ratio: 9/14) {
+    h1.title {
+        font-size: 3rem;
+    }
+
+    span.subtitle {
+        font-size: 1.2rem;
+    }
+}
