@@ -1,0 +1,52 @@
+* {
+    font-family: 'Cantarell', sans-serif;
+}
+
+body {
+    background-color: #1a003d;
+    color: #d1d4db;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1.title {
+    font-size: 4rem;
+}
+
+span.subtitle {
+    font-size: 1.4rem;
+}
+
+.subtitle, .title {
+    text-align: center;
+}
+
+a, a:active, a:visited {
+    color: #008bff;
+}
+
+@media only screen and (max-aspect-ratio: 9/14) {
+    h1.title {
+        font-size: 3rem;
+    }
+
+    span.subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+/* 
+ * This media query detects devices that have hover support,
+ *  even though it doesn't seem that way - this is because
+ * media query syntax is kinda scuffed
+*/
+@media not all and (hover: none) {
+    a:hover, a:active:hover, a:visited:hover {
+        filter: brightness(1.2);
+    }
+}
