@@ -39,3 +39,14 @@ a, a:active, a:visited {
         font-size: 1.2rem;
     }
 }
+
+/* 
+ * This media query detects devices that have hover support,
+ *  even though it doesn't seem that way - this is because
+ * media query syntax is kinda scuffed
+*/
+@media not all and (hover: none) {
+    a:hover, a:active:hover, a:visited:hover {
+        filter: brightness(1.2);
+    }
+}
